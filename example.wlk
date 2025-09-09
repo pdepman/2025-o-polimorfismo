@@ -45,12 +45,15 @@ object uma {
   }
 
   method transporte() = transporte
+
+  method puedeVolar() = transporte.puedeDespegar()
 }
 
 object bondi {
-
+  method puedeDespegar() = false
 }
 
 object helicoptero {
-
+  var litros = 100
+  method puedeDespegar() = litros > 10
 }

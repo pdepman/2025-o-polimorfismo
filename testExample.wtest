@@ -23,4 +23,13 @@ describe "tests de Uma" {
     uma.transporte(helicoptero)
     assert.equals(helicoptero, uma.transporte())
   }
+
+  test "uma puede volar cuando su transporte puede despegar" {
+    uma.transporte(helicoptero)
+    assert.that(uma.puedeVolar())
+  }
+
+  test "uma no puede volar cuando su transporte no puede despegar" {
+    assert.notThat(uma.puedeVolar())
+  }
 }
