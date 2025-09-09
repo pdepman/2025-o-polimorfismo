@@ -37,3 +37,20 @@ object ernesto {
   }
 }
 
+object uma {
+  var transporte = bondi
+
+  method transporte(unTransporte) {
+    transporte = unTransporte
+  }
+
+  method transporte() = transporte
+}
+
+object bondi {
+
+}
+
+object helicoptero {
+
+}

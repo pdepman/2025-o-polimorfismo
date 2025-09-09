@@ -17,3 +17,10 @@ describe "Tests de ernesto" {
   }
 
 }
+
+describe "tests de Uma" {
+  test "Uma puede cambiar su transporte" {
+    uma.transporte(helicoptero)
+    assert.equals(helicoptero, uma.transporte())
+  }
+}
