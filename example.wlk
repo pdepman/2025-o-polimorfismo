@@ -55,5 +55,9 @@ object bondi {
 
 object helicoptero {
   var litros = 100
+
+  method litros(unosLitros) {
+    litros = unosLitros
+  }
   method puedeDespegar() = litros > 10
 }

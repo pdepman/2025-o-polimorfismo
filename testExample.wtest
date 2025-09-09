@@ -33,3 +33,16 @@ describe "tests de Uma" {
     assert.notThat(uma.puedeVolar())
   }
 }
+
+describe "tests de transportes" {
+  test "Si un helicoptero tiene más de 10 litros puede despegar" {
+    assert.that(helicoptero.puedeDespegar())
+  }
+
+  test "si un helicoptero no tiene litros suficientes no puede despegar"{
+    helicoptero.litros(5)
+    assert.notThat(helicoptero.puedeDespegar())
+  }
+
+  // les dejo los tests de el bondi
+}
