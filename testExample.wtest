@@ -1,9 +1,19 @@
-import example.pepita
+import example.*
 
-describe "group of tests for pepita" {
+describe "Tests de ernesto" {
 
-  test "pepita has initial energy" {
-    assert.equals(100, pepita.energy())
+  test "La energia tiene que ser 200 / el hambre" {
+    assert.equals(40, ernesto.energia())
+  }
+
+  test "Al comer alfajor, se reduce a la mitad su hambre" {
+    ernesto.comerAlfajor()
+    assert.equals(2.5, ernesto.hambre())
+  }
+
+  test "al merendar produce el efecto de comer dos alfajores" {
+    ernesto.merendar()
+    assert.equals(1.25, ernesto.hambre())
   }
 
 }
