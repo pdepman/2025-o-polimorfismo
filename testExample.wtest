@@ -46,3 +46,15 @@ describe "tests de transportes" {
 
   // les dejo los tests de el bondi
 }
+
+describe "tests para salvar el avion" {
+  test "salvar el avion puede ser completada por un heroe que puede volar" {
+    uma.transporte(helicoptero)
+    assert.that(salvarElAvion.puedeCumplirla(uma))
+  }
+  
+  test "salvar el avion no puede ser completada por un heroe que no puede volar" {
+    assert.notThat(salvarElAvion.puedeCumplirla(ernesto))
+  
+  }
+}
