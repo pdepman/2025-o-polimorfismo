@@ -35,9 +35,15 @@ object ernesto {
     self.comerAlfajor()
     self.comerAlfajor()
   }
+
+  method puedeVolar() = false
 }
 
 object uma {
+  const energia = 500
+
+  method energia() = energia
+
   var transporte = bondi
 
   method transporte(unTransporte) {
@@ -60,4 +66,12 @@ object helicoptero {
     litros = unosLitros
   }
   method puedeDespegar() = litros > 10
+}
+
+object salvarElAvion {
+  method puedeCumplirla(heroe) = heroe.puedeVolar() 
+}
+
+object evitarChoque {
+  method puedeCumplirla(heroe) = heroe.energia() > 100 
 }
